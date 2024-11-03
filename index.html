@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Valentin Palokaj – Bewerbungsseite</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+
+    <!-- Begrüßung und Kurzbeschreibung -->
+    <header id="intro-content">
+        <h1>Willkommen!</h1>
+        <img src="profilbild.png" alt="Profilbild von Valentin Palokaj" class="profilbild">
+        <h2>Valentin Palokaj</h2>
+        <div id="intro-text">
+            <h3>ICT-Fachmann in Ausbildung</h3>
+            <p>Ein engagierter ICT-Fachmann mit einem starken Fokus auf Technologie und Problemlösung.</p>
+        </div>
+    </header>
+
+    <!-- Über mich Abschnitt -->
+    <div id="about-me-centered" style="display: none; text-align: center;">
+        <p>Willkommen auf meiner Website.<br><br> Hier erfährst du mehr über meinen beruflichen Weg und meine persönliche Entwicklung. Geboren bin ich am 27.04.1992.<br> Ursprünglich habe ich in der Produktion gearbeitet, doch mein Interesse an der IT hat mich dazu gebracht, die Branche zu wechseln.<br><br> Heute bilde ich mich an der WISS in Altstetten zum ICT-Fachmann weiter.<br> Neben meiner Leidenschaft für die IT sind auch Musik, Fitness und Basketball feste Bestandteile meines Lebens.<br><br> Viel Spaß beim Durchstöbern meiner selbst kreierten Seite.<br><br><br><br><br><br></p>
+
+        <!-- Neue Bilder hinzufügen -->
+        <img src="support.jpg" alt="Support" id="support-image" class="side-image" style="display: none;">
+        <img src="lösung.jpeg" alt="Lösung" id="lösung-image" class="side-image" style="display: none;">
+    </div>
+
+    <!-- Kontakt Abschnitt -->
+    <div id="contact-info" style="display: none;">
+        <h3>Kontakt</h3>
+        <p>Email: valentin_palokaj92@hotmail.com</p>
+        <p>Adresse: Feldpark 4, 6300 Zug</p>
+        <p>Telefon: +41 76 519 56 27</p>
+    </div>
+
+    <!-- Portfolio Abschnitt -->
+    <div id="portfolio" style="display: none;">
+        <h3>Portfolio</h3>
+        <p>Hier kannst du einige meiner Projekte sehen und mehr über meine Arbeiten erfahren.</p>
+        <p>
+            <a href="lebenslauf.pdf" target="_blank" style="color: #5a9ec9; text-decoration: underline;">
+                Meinen Lebenslauf
+            </a>
+        </p>
+    </div>
+
+    <!-- Schaltflächen-Karten für verschiedene Abschnitte -->
+    <div class="card-container">
+        <div class="card">
+            <a href="#" onclick="showSection('about-me-centered')">Über mich</a>
+        </div>
+        <div class="card">
+            <a href="#" onclick="showSection('contact-info')">Kontakt</a>
+        </div>
+        <div class="card">
+            <a href="#" onclick="showSection('portfolio')">Portfolio</a>
+        </div>
+    </div>
+
+</body>
+</html>

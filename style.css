@@ -1,0 +1,114 @@
+/* Allgemeine Einstellungen */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    min-height: 100vh;
+    background: linear-gradient(to bottom, #1F4E79, #ffffff); /* Neuer Farbverlauf von Blau zu Weiß */
+    color: #333;
+}
+
+/* Header-Design */
+header {
+    text-align: center;
+    max-width: 600px;
+}
+
+header h1 {
+    font-size: 2.5em;
+    color: #333;
+}
+
+header h2 {
+    font-size: 1.5em;
+    color: #000000;
+    margin: 10px 0;
+}
+
+header p {
+    font-size: 1em;
+    color: #500;
+    margin: 20px 0;
+}
+
+/* Profilbild */
+.profilbild {
+    width: 150px;
+    height: auto;
+    border-radius: 5px;
+    margin: 20px 0;
+}
+
+/* Container für Karten, unten fixiert */
+.card-container {
+    display: flex;
+    gap: 20px;
+    position: fixed;
+    bottom: 20px;
+    width: 100%;
+    justify-content: center; /* Zentriert die Schaltflächen */
+}
+
+/* Karten-Styling als Schaltflächen */
+.card {
+    background-color: #ffffff;
+    border: 2px solid #a0cfe5;
+    border-radius: 8px;
+    padding: 20px;
+    width: 150px;
+    text-align: center;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s, background-color 0.3s;
+    cursor: pointer;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.2);
+    background-color: #e6f7ff;
+}
+
+/* Link-Styling innerhalb der Karte */
+.card a {
+    text-decoration: none;
+    font-weight: bold;
+    color: #333;
+    font-size: 1.1em;
+    display: block;
+    padding: 10px;
+}
+
+/* Einheitliches Layout für 'Über mich', 'Kontakt' und 'Portfolio' */
+#about-me-centered, #contact-info, #portfolio {
+    max-width: 600px; /* Maximale Breite des Textbereichs */
+    margin: 0 auto; /* Zentriert den Bereich */
+    padding: 20px; /* Abstand zum Rand */
+    text-align: center; /* Zentriert den Text innerhalb des Bereichs */
+    background-color: #ffffff; /* Hintergrundfarbe für bessere Lesbarkeit */
+    border-radius: 8px; /* Abgerundete Ecken für ein schönes Design */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Leichter Schatten für einen abgehobenen Effekt */
+}
+
+/* Styling für die Bilder, die links und rechts angezeigt werden */
+.side-image {
+    width: 150px;
+    height: auto;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%); /* Vertikal zentriert */
+    display: none; /* Standardmäßig ausgeblendet */
+}
+
+#support-image {
+    left: 20px; /* Positioniert das Bild links */
+    transform: translateY(-50%) rotate(-15deg); /* Dreht das Bild um 5 Grad nach links */
+}
+
+#lösung-image {
+    right: 20px; /* Positioniert das Bild rechts */
+    transform: translateY(-50%) rotate(+15deg); /* Vertikal zentriert ohne Rotation */
+}
